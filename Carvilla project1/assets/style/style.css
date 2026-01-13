@@ -1,0 +1,639 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TOP */
+.top{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;  
+    background-color: #009688;
+    color: white;
+    padding: 15px 20px;
+}
+
+.top a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.top i{
+    margin: 0 5px;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar i{
+    margin: 0 10px 0 25px;
+}
+
+.navbar h2{
+    font-size: 30px;
+}
+ 
+/* Main page */
+
+.hero {
+  width: 100%;
+  min-height: 560px;
+  background-image: url(../images/car.jpg); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+
+
+.hero h1{
+    position: relative;
+    top: 150px;
+    font-size: 35px;
+}
+
+.hero h2{
+    position: relative;
+    top: 190px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.hero h3{
+    position: relative;
+    top: 210px;
+    font-weight: normal;
+}
+
+.cub{
+    padding: 17px 38px;
+    background-color: #009688;
+    color: white;
+    position: relative;
+    top: 260px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Details */
+
+.selectSection{
+    margin:  40px 100px;
+    padding: 45px;
+    box-shadow: 0 0 15px grey;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.8;
+}
+.details{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.searchBtn{
+    text-align: center;
+}
+.details select{
+    margin: 20px 0;
+    padding: 0 0 0 10px;
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    background-color: rgb(237, 237, 237);
+    opacity: 0.8;
+    font-size: 15px;
+    border: none;
+}
+
+.details label,select{
+    font-size: 17px;
+    width: 150px;
+}
+
+.sb{
+    margin: 20px 0;
+    padding: 15px 40px;
+    background-color: #009688;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    /* position: relative;
+    left: 480px; */
+}
+
+.sbt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* three box */
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 40px 80px;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box div{
+    padding: 5px;
+    box-shadow: 0 0 1px grey;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.box i{
+    font-size: 40px;
+    margin: 60px 0 0 0;
+    color: grey;
+}
+
+.box h4{
+    font-size: 22px;
+    /* margin: 30px 0; */
+    font-weight: normal;
+}
+
+.box p{
+    color: grey;
+    margin: 0 0 40px 0;
+    /* margin: 0 10px 70px 10px; */
+}
+ 
+.box div:hover{
+    color: white;
+    background-color: #009688;
+}
+
+.box div:hover p{
+    color: white !important;
+}
+
+.box div:hover i{
+    color: white !important;
+}
+
+.new{
+    font-size: 37px;
+    margin: 15px;
+    color: grey;
+}
+
+/* Ferrari car */
+
+.ferrari{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 20px 120px 20px 100px;
+    /* align-items: center; */
+}
+
+.ferrari img{
+    width: 570px;
+}
+
+.fertext{
+    padding: 10px !important;
+}
+
+.fertext h1,.fertext p{
+    margin: 20px;
+}
+
+.fertext h1{
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.fertext p{
+    font-size: 15px;
+    line-height: 20px;
+    color: grey;
+}
+
+.fertext button{
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: #009688;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+
+.feature{
+    margin: 60px;
+}
+
+/* Car Cards */
+
+.caritems{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px 100px;
+}
+
+@media screen and (max-width:1024px){
+    .caritems{
+        margin: 20px;
+    }
+    .carSection{
+        width: 230px;
+    }
+    .caritems img{
+        width: 150px !important;
+    }
+}
+
+.caritems div div{
+    border: 1px  solid rgb(188, 188, 188);
+}
+
+.caritems img{
+    width: 180px;
+    padding: 70px 50px;
+}
+
+.carimg{
+    height: 230px;
+    align-items: center;
+}
+
+.caritems p{
+    font-size: 14px;
+    color: rgb(104, 104, 104);
+}
+
+.caritems p b{
+    display: block;
+    margin: 20px 0;
+    line-height: 0.1;
+    color: black;
+}
+
+.carimg+div{
+    padding: 15px;
+}
+
+.watch{
+    font-size: 37px;
+    margin: 70px;
+    color: rgb(115, 115, 115);
+}
+
+/* Reviews */
+
+.reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 100px;
+    font-size: 17px;
+}
+
+.reviews div{
+    /* border: 1px solid grey; */
+    box-shadow: 0 0 1px grey;
+    padding: 40px 15px;
+    align-items: center;
+}
+
+.reviews div:hover{
+    color: white;
+    background-color: #009688;
+}
+
+.reviews div:hover p{
+    color: white;
+}
+
+.reviews p{
+    margin: 40px 3px;
+    line-height: 28px;
+    font-size: 18px;
+    align-items: center;
+    color: grey;
+}
+
+.reviews b{
+    font-size: 18px;
+}
+
+.reviews img{
+    height: 65px;
+    width: 65px;
+}
+
+/* LOGO */
+
+.logo{
+    margin: 10px 70px;
+}
+
+.logo img{
+    margin: 10px 40px;
+    height: 65px;
+    width: 120px;
+}
+
+/* BOTTOM */
+
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    background-color: black;
+    padding:60px 80px;
+    font-size: 15px;
+    margin: 70px 0 0 0;
+}
+
+.bottom input{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px gold;
+    color: grey;
+    background-color: black;
+    padding: 0 5px;
+}
+
+.bottom .b1{
+    width: 290px;
+}
+
+.bottom .b5{
+    width: 280px;
+}
+
+.bottom .b2 p:hover{
+    position: relative;
+    left: 10px;
+}
+.bottom .b3 p:hover{
+    position: relative;
+    left: 10px;
+}
+.bottom .b4 p:hover{
+    position: relative;
+    left: 10px;
+}
+
+.bottom h1,.bottom h4,.bottom p,.bottom input{
+    margin: 20px 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #009688;
+    color: white;
+    padding: 0 80px;
+    align-items: center;
+    font-size: 15px;
+    height: 50px;
+}
+
+/* MEDIA QUERY */
+
+#menubar,#menu{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .top{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    #menubar:checked ~ .links{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        background-color: black;
+        width: 100%;
+        left: 0;
+        gap: 30px;
+        padding: 20px 0;
+    }
+    .details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 40px;
+        padding: 20px;
+    }
+    .selectSection{
+        margin: 40px;
+        padding: 25px;
+    }
+    .ferrari{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin: 10px;
+    }
+    .ferrari img{
+    width: 700px;
+    }
+    .caritems{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 30px;
+    }
+    .reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 30px;
+    font-size: 17px;
+    }
+    .logo{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        margin: 10px 20px;
+    }
+    .bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    background-color: black;
+    padding:60px 80px;
+    font-size: 15px;
+    margin: 70px 0 0 0;
+    }
+    .footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #009688;
+    color: white;
+    padding: 0 40px;
+    align-items: center;
+    font-size: 16px;
+    height: 50px;
+    }
+    .carSection{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:426px){
+    .hero h1{
+        position: relative;
+        top: 100px;
+        font-size: 27px;
+        margin: 0 15px;
+    }
+    .hero h2{
+    position: relative;
+    top: 140px;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 20px;
+    line-height: 30px;
+    }
+    .hero h3{
+    position: relative;
+    top: 160px;
+    font-size: 20px;
+    margin:0 20px;
+    font-weight: normal;
+    line-height: 30px;
+    }
+    .cub{
+        position: relative;
+        top: 190px;
+    }
+    .details{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .selectSection{
+        margin: 40px 20px;
+        padding: 25px;
+    }
+    .box{
+        text-align: center;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 40px 0px;
+        padding: 20px;
+    }
+    .ferrari{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    }
+    .ferrari img{
+    width: 270px;
+    }
+    .fertext h1{
+    font-size: 25px;
+    font-weight: normal;
+    }
+    .fertext h1,.fertext p{
+    margin: 20px 10px;
+    }
+    .feature{
+        margin: 30px;
+    }
+    .feature .new{
+    font-size: 35px;
+    }
+    .caritems{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px 20px;
+    }
+    .reviews{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px;
+    font-size: 17px;
+    }
+    .watch{
+    font-size: 25px;
+    margin: 40px 20px;
+    }
+    .logo{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 35px;
+        margin: 30px 60px;
+    }
+    .bottom{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    background-color: black;
+    padding:30px 20px;
+    font-size: 15px;
+    margin: 70px 0 0 0;
+    }
+    .footer{
+    display: block;
+    background-color: #009688;
+    color: white;
+    padding: 20px 20px;
+    align-items: center;
+    font-size: 15px;
+    height: 60px;
+    }
+    .footer div{
+        margin: 0 0 10px 0;
+    }
+    .carSection{
+        width: 280px;
+    }
+}
+
